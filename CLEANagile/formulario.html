@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Formulário de Contato</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='_css/formulario.css'>
+    <link rel="icon" type="image" href="/_imagens/logo com fundo.png">
+    <script src='/_javascript/envio.js'></script>
+</head>
+<body>
+    <header>
+        <div id="menu">
+            <ul>
+                <a href="/index.html"><li><img id="logo" src="/_imagens/Logo Clean Agile (2).png" alt=""></li></a>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="sobrenos.html">Sobre Nós</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="formulario.html">Contate-nos</a></li>
+            </ul>
+        </div>
+    </header>
+
+
+    <main>
+        <form action="Envio.html" method="get" onsubmit="return gerarJson()">
+            <h1>Contrate o nosso serviço: </h1>
+
+            <label for="nome">Nome:</label> <br>
+            <input type="text" id="nome" placeholder="Digite seu nome" onchange="inputNome()" required> <br> <br>  
+            <span id="avisoNome">Digite um nome válido</span>
+
+            <label for="">E-mail:</label> <br>
+            <input type="email" id="email" placeholder="Digite seu e-mail" onchange="inputEmail()" required> <br> <br>
+            <span id="avisoEmail">Digite um e-mail válido</span>
+
+            <label for="">Telefone:</label> <br>
+            <input type="tel" id="telefone" placeholder="Digite seu telefone" onchange="inputTelefone()" required> <br> <br>
+            <span id="avisoTelefone">Digite um telefone válido (somente números)</span>
+
+            <label for="">Endereço:</label> <br>
+            <input type="text" id="endereco" placeholder="Digite seu telefone" required> <br> <br> 
+
+            <label for="">Serviços:</label> <br>
+            <select name="" id="servico">
+                <option value="Casa">Limpeza de Casa</option>
+                <option value="Empresa">Limpeza de Empresa</option>
+                <option value="Salao">Limpeza de Salão</option>
+                <option value="Terreno">Limpeza de Terreno</option>
+            </select>
+            <br> <br> <br>
+
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpar</button>
+        </form>
+    </main>
+
+
+    <footer>
+        <p id="footertext">Todos os Direitos a CLEAN.Agile ©</p>
+    </footer>
+</body>
+</html>
